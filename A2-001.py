@@ -3,7 +3,7 @@ r = list(map(int,[0]+input().split()))
 b = list(map(int,[0]+input().split()))
 cnt = 1
 def X(op,r1,r2,b1,b2):
-    if op: return b1 < r2 and b2 > r1
+    if op: return r1 < b2 and r2 > b1
     if r2 == b2: return True
     return (b1 < r1 and b2 > r2) or (b1 > r1 and b2 < r2)
 for i in range(m):
