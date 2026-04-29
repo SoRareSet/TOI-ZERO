@@ -11,5 +11,4 @@ for i in range(m):
     for j in range(n):
         b1 , b2 = b[j:j+2]
         cnt += X(i%2^j%2,r1,r2,b1,b2)
-        if b1 > r2: break
 print(cnt)
