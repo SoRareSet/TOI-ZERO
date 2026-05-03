@@ -1,4 +1,3 @@
-nm , pk = int(input()) , input()
-mn = nm%10*10+nm//10
-if pk=="+" : print(nm,"+",mn,"=",nm+mn)
-if pk=="*" : print(nm,"*",mn,"=",nm*mn)
+nm , pk = input() , input()
+mn = nm[1] + nm[0]
+print(nm,pk,mn,"=",eval(nm+pk+mn))
