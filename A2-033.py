@@ -1,8 +1,8 @@
-a,b = list(map(int,input("").split(".")))
-c,d = list(map(int,input("").split(".")))
+a , b = list(map(int,input().split(".")))
+c , d = list(map(int,input().split(".")))
 e = (c-a)*60+d-b
-if(a<0|a>23|c<0|c>23): print('Error')
-elif(b>59|d>59): print('ERROR')
+if(a<0 or a>23 or c<0 or c>23): print('Error')
+elif(b>59 or d>59): print('ERROR')
 elif(e<0): print('ERROR')
 elif(e<15): print('FREE')
 elif(e<61): print(25)
