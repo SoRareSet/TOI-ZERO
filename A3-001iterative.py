@@ -1,5 +1,5 @@
 N , pt = int(input()) , [0]
-pt += [map(int,input().split()) for i in range(N)]
+pt += [list(map(int,input().split())) for i in range(N)]
 stack , dp = [(1,False)] , dict(())
 while stack:
     k , vis = stack.pop()
