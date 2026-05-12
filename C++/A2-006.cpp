@@ -14,5 +14,5 @@ int main(int ac,char** av){
         av[i][j]='X';
         return 1+re(re,i,j+1)+re(re,i+1,j);
     };
-    return !bool(cout<<pt(pt,0,0));
+    return bool(cout<<pt(pt,0,0))&&0;
 }
