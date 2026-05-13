@@ -6,7 +6,7 @@ int main(){
     cin >> N;
     for(int i=0,p,v;N--;){
         cin >> p >> v;
-        v>mn?cnt++:v=mn;
+        v>mn?cnt++:mn=v;
     }
     cout << cnt;
 }
